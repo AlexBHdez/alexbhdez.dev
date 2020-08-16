@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
-import Layout from '../components/Layout'
-import Header from '../components/Header'
+import { Header } from '../components'
 
 const Home = () => (
   <>
@@ -10,9 +9,7 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Layout>
-      <Header />
-    </Layout>
+    <Header />
   </>
 )
 
