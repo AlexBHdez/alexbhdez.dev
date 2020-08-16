@@ -1,5 +1,12 @@
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import { ThemeModeProvider } from '../context/ThemeModeContext'
+import CustomThemeProvider from '../styles/CustomThemeProvider'
 
-export default MyApp
+const App = ({ Component, pageProps }) => (
+  <ThemeModeProvider>
+    <CustomThemeProvider>
+      <Component {...pageProps} />
+    </CustomThemeProvider>
+  </ThemeModeProvider>
+)
+
+export default App
