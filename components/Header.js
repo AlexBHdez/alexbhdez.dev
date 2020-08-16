@@ -1,12 +1,33 @@
+import styled from 'styled-components'
+
 import Link from 'next/link'
 
+const Wrap = styled.header`
+  height: 100px;
+  left: 50%;
+  max-width: 1200px;
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+`
+
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+`
+
+const Menu = styled.ul`
+  display: flex;
+`
+
 const Header = () => (
-  <header>
-    <nav>
+  <Wrap>
+    <Nav>
       <Link href="/">
-        <a>Logo</a>
+        <a>alexbhdez.dev</a>
       </Link>
-      <ul>
+      <Menu>
         <li>
           <Link href="/blog">
             <a>Blog</a>
@@ -17,9 +38,9 @@ const Header = () => (
             Contact
           </a>
         </li>
-      </ul>
-    </nav>
-  </header>
+      </Menu>
+    </Nav>
+  </Wrap>
 )
 
 export default Header
