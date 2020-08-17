@@ -5,23 +5,25 @@ const Wrap = styled.div`
   width: 40px;
   height: 20px;
   border-radius: 40px;
-  background-color: tomato;
+  background-color: ${({ theme }) => theme.colors.toggleBg};
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: '';
-    width: 18px;
-    height: 18px;
-    border-radius: 18px;
-    background-color: gold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: ${({ theme }) => theme.colors.toggleCircle};
     position: absolute;
-    left: 1px;
-    top: 1px;
+    transition: left 0.2s linear;
+    left: ${({ darkMode }) => (darkMode ? '2px' : '22px')};
+    top: 2px;
   }
 `
 
 const ThemeToggle = ({ onClick, darkMode }) => (
-  <Wrap onClick={onClick} aria-hidden="true" themeMode={darkMode} />
+  <Wrap onClick={onClick} aria-hidden="true" darkMode={darkMode} />
 )
 
 export default ThemeToggle
