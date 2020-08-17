@@ -36,9 +36,8 @@ const Menu = styled.ul`
 `
 
 const Header = () => {
-  const { themeMode, setThemeMode } = useContext(ThemeModeContext)
-  const handleThemeClick = () =>
-    setThemeMode(themeMode === 'lightTheme' ? 'darkTheme' : 'lightTheme')
+  const { darkMode, setDarkMode } = useContext(ThemeModeContext)
+  const handleThemeClick = () => setDarkMode(!darkMode)
 
   return (
     <Wrap>
@@ -46,7 +45,7 @@ const Header = () => {
         <Link href="/">
           <a>alexbhdez.dev</a>
         </Link>
-        <ThemeToggle onClick={handleThemeClick} />
+        <ThemeToggle onClick={handleThemeClick} darkMode={darkMode} />
         <Menu>
           <li>
             <Link href="/blog">

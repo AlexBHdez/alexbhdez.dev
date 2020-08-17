@@ -1,15 +1,20 @@
-import React, { createContext, useState } from 'react'
+import { createContext, useState } from 'react'
+import { node } from 'prop-types'
 
 const ThemeModeContext = createContext()
 
 const ThemeModeProvider = ({ children }) => {
-  const [themeMode, setThemeMode] = useState('lightTheme')
+  const [darkMode, setDarkMode] = useState(true)
 
   return (
-    <ThemeModeContext.Provider value={{ themeMode, setThemeMode }}>
+    <ThemeModeContext.Provider value={{ darkMode, setDarkMode }}>
       {children}
     </ThemeModeContext.Provider>
   )
 }
 
 export { ThemeModeContext, ThemeModeProvider }
+
+ThemeModeProvider.propTypes = {
+  children: node.isRequired,
+}
