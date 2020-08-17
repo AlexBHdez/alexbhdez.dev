@@ -23,6 +23,10 @@ const Nav = styled.nav`
 
 const Menu = styled.ul`
   display: flex;
+
+  > li {
+    margin: 0 8px;
+  }
 `
 
 const Header = () => {

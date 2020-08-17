@@ -11,9 +11,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    font-family: 'Ubuntu', sans-serif;
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all .5s linear;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 `
 
