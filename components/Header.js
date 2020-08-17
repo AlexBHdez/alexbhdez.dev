@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import { ThemeModeContext } from '../context/ThemeModeContext'
+import { ThemeToggle } from './ui'
 
 const Wrap = styled.header`
   height: 80px;
@@ -26,6 +27,11 @@ const Menu = styled.ul`
 
   > li {
     margin: 0 8px;
+    transition: color 0.35s ease;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.textHover};
+    }
   }
 `
 
@@ -40,9 +46,7 @@ const Header = () => {
         <Link href="/">
           <a>alexbhdez.dev</a>
         </Link>
-        <span role="button" onClick={handleThemeClick} aria-hidden="true">
-          theme
-        </span>
+        <ThemeToggle onClick={handleThemeClick} />
         <Menu>
           <li>
             <Link href="/blog">
