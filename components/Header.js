@@ -4,22 +4,19 @@ import Link from 'next/link'
 import { ThemeModeContext } from '../context/ThemeModeContext'
 import { ThemeToggle } from './ui'
 
-const Wrap = styled.header`
-  height: 80px;
-  left: 50%;
-  max-width: 1200px;
-  position: fixed;
-  top: 0;
-  transform: translateX(-50%);
-  width: 100%;
-`
+const Wrap = styled.header``
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  height: 100%;
   align-items: center;
-  padding: 0 30px;
+  position: fixed;
+  height: ${({ theme }) => theme.sizes.headerHeight};
+  padding: 0 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: ${({ theme }) => theme.zIndex.navBar};
 `
 
 const Menu = styled.ul`

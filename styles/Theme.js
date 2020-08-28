@@ -5,6 +5,14 @@ const fontWeight = {
   bold: 800,
 }
 
+const sizes = {
+  headerHeight: '80px',
+}
+
+const zIndex = {
+  navBar: '90',
+}
+
 const lightTheme = {
   colors: {
     body: '#FFF',
@@ -16,6 +24,8 @@ const lightTheme = {
     toggleCircle: '#FFF',
   },
   fontWeight: { ...fontWeight },
+  sizes: { ...sizes },
+  zIndex: { ...zIndex },
 }
 const darkTheme = {
   colors: {
@@ -28,6 +38,8 @@ const darkTheme = {
     toggleCircle: '#7B7E7C',
   },
   fontWeight: { ...fontWeight },
+  sizes: { ...sizes },
+  zIndex: { ...zIndex },
 }
 
 export { lightTheme, darkTheme }

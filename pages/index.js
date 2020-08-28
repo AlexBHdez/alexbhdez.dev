@@ -1,6 +1,6 @@
 import Head from 'next/head'
-
-import { Header } from '../components'
+import { Header, Intro } from '../components'
+import { MainContainer } from '../components/ui'
 
 const Home = () => (
   <>
@@ -14,6 +14,9 @@ const Home = () => (
     </Head>
 
     <Header />
+    <MainContainer>
+      <Intro />
+    </MainContainer>
   </>
 )
 

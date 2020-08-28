@@ -16,11 +16,22 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     transition: all .5s linear;
+    height: 100%;
+
+    #__next {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
   }
 `
 
