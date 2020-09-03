@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 import { ThemeModeContext } from '../context/ThemeModeContext'
 import { ThemeToggle, Logo } from './ui'
+import { media } from '../styles/Theme'
 
 const Wrap = styled.header``
 
@@ -17,6 +18,18 @@ const Nav = styled.nav`
   left: 0;
   right: 0;
   z-index: ${({ theme }) => theme.zIndex.navBar};
+`
+
+const LogoWrapper = styled.a`
+  transition: width 0.75s ease;
+  transition: transform 1.25s ease;
+  width: 200px;
+
+  ${media.lessThan('mobile')`
+    width: 25px;
+    overflow: hidden;
+    transform: scale(1.5);
+  `}
 `
 
 const Menu = styled.ul`
@@ -40,9 +53,9 @@ const Header = () => {
     <Wrap>
       <Nav>
         <Link href="/">
-          <a>
+          <LogoWrapper>
             <Logo />
-          </a>
+          </LogoWrapper>
         </Link>
         <ThemeToggle onClick={handleThemeClick} darkMode={darkMode} />
         <Menu>
