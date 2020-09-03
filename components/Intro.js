@@ -12,7 +12,7 @@ const Wrap = styled.div`
 
   ${media.greaterThan('tablet')`
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0px;
+    grid-gap: 20px;
   `}
 `
 
@@ -24,7 +24,7 @@ const Intro = () => (
   <Wrap>
     <Greetings>
       <Title headingTag="h1">Hi, I'm Alex,</Title>
-      <Title headingTag="h2">a frontEnd and UI/UX developer.</Title>
+      <Title headingTag="h2">a frontEnd developer with design experience.</Title>
       <Button onClick={() => console.log('wolaaaaaaa')}>Say hello</Button>
     </Greetings>
     <Bio>

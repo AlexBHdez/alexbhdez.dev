@@ -1,17 +1,12 @@
 import { generateMedia } from 'styled-media-query'
 
-// TODO: Refactor fontSizes
 const fontSize = {
-  // ref: 10px
-  xs: '1rem',
-  s: '1.4rem',
-  sm: '1.6rem',
-  m: '1.8rem',
-  l: '2.1rem',
-  ll: '2.8rem',
-  xl: '3.2rem',
-  xll: '4rem',
-  xxl: '4.8rem',
+  small: '0.75rem',
+  regular: '1rem',
+  plus: '1.25rem',
+  medium: '1.25rem',
+  big: '2rem',
+  super: '2.5rem',
 }
 
 const fontWeight = {

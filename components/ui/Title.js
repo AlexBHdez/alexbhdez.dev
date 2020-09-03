@@ -7,14 +7,14 @@ const titleStyle = ({ theme, as }) => {
     case 'h1':
       return `
         font-weight: ${theme.fontWeight.bold};
-        font-size: ${theme.fontSize.xxl};
+        font-size: ${theme.fontSize.super};
         color: ${theme.colors.h1};
       `
     case 'h2':
       return `
         font-weight: ${theme.fontWeight.semi};
-        font-size: ${theme.fontSize.ll};
-        margin-top: 5px;
+        font-size: ${theme.fontSize.medium};
+        margin-top: 10px;
         line-height: 1.1em;
       `
     default:
