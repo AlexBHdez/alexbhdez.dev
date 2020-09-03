@@ -6,8 +6,8 @@ const Wrap = styled.button`
   margin-top: 20px;
   width: auto;
   height: 50px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
   background-color: transparent;
   border: 1px solid purple;
   padding: 0 25px;

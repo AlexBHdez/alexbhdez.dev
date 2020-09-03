@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     height: 100%;
+    font-size: 10px;
   }
 
   body {
@@ -17,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     transition: all .5s linear;
     height: 100%;
+    font-size: ${({ theme }) => theme.fontSize.sm};
 
     #__next {
       height: 100%;

@@ -6,14 +6,14 @@ const titleStyle = ({ theme, as }) => {
   switch (as) {
     case 'h1':
       return `
-        font-weight: 700;
-        font-size: 52px;
+        font-weight: ${theme.fontWeight.bold};
+        font-size: ${theme.fontSize.xxl};
         color: ${theme.colors.h1};
       `
     case 'h2':
       return `
-        font-weight: 500;
-        font-size: 28px;
+        font-weight: ${theme.fontWeight.semi};
+        font-size: ${theme.fontSize.ll};
         margin-top: 5px;
         line-height: 1.1em;
       `

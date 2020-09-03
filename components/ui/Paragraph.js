@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { node } from 'prop-types'
 
 const Wrap = styled.p`
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-bottom: 20px;
   line-height: 1.6em;
 `
