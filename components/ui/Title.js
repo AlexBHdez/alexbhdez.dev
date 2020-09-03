@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { string, oneOf } from 'prop-types'
 
-const titleStyle = (theme, tag) => {
-  switch (tag) {
+const titleStyle = ({ theme, as }) => {
+  switch (as) {
     case 'h1':
       return `
         font-weight: 700;
@@ -25,7 +25,7 @@ const titleStyle = (theme, tag) => {
 // The rendered tag will be the received in as prop.
 // This is a styled component feature
 const Wrap = styled.div`
-  ${({ theme, as }) => titleStyle(theme, as)};
+  ${titleStyle};
 `
 
 const Title = ({ children, headingTag }) => <Wrap as={headingTag}>{children}</Wrap>
