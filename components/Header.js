@@ -12,7 +12,7 @@ const Nav = styled.nav`
   align-items: center;
   position: fixed;
   height: ${({ theme }) => theme.sizes.headerHeight};
-  padding: 0 80px;
+  padding: ${({ theme }) => `0px ${theme.sizes.containerPadding}`};
   top: 0;
   left: 0;
   right: 0;

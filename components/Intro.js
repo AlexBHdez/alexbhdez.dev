@@ -1,11 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Paragraph, Title, Button } from './ui'
+import { media } from '../styles/Theme'
 
 const Wrap = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 30px 15px;
+  grid-template-rows: auto auto;
+  grid-gap: 40px;
+  padding: 30px 0px;
+  transition: all 0.75s ease;
+
+  ${media.greaterThan('tablet')`
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+  `}
 `
 
 const Greetings = styled.div``

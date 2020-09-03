@@ -1,3 +1,5 @@
+import { generateMedia } from 'styled-media-query'
+
 // TODO: Refactor fontSizes
 const fontSize = {
   // ref: 10px
@@ -21,6 +23,7 @@ const fontWeight = {
 
 const sizes = {
   headerHeight: '80px',
+  containerPadding: '40px',
 }
 
 const zIndex = {
@@ -60,4 +63,10 @@ const darkTheme = {
   zIndex: { ...zIndex },
 }
 
-export { lightTheme, darkTheme }
+const media = generateMedia({
+  mobile: '576px',
+  tablet: '769px',
+  desktop: '992px',
+})
+
+export { lightTheme, darkTheme, media }

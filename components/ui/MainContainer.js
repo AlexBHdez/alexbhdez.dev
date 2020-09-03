@@ -10,7 +10,7 @@ const InnerWrap = styled.div`
   margin: ${({ theme }) => `${theme.sizes.headerHeight} auto`};
   max-width: 800px;
   background-color: pink;
-  padding: 0 30px;
+  padding: ${({ theme }) => `0px ${theme.sizes.containerPadding}`};
 `
 
 const MainContainer = ({ children }) => (
