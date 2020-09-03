@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Paragraph, Title } from './ui'
+import { Paragraph, Title, Button } from './ui'
 
 const Wrap = styled.div`
   display: grid;
@@ -17,7 +17,7 @@ const Intro = () => (
     <Greetings>
       <Title headingTag="h1">Hi, I'm Alex,</Title>
       <Title headingTag="h2">a frontEnd and UI/UX developer.</Title>
-      <button type="button">Say hello</button>
+      <Button onClick={() => console.log('wolaaaaaaa')}>Say hello</Button>
     </Greetings>
     <Bio>
       <Paragraph>
