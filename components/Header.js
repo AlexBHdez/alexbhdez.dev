@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import { ThemeModeContext } from '../context/ThemeModeContext'
-import { ThemeToggle } from './ui'
+import { ThemeToggle, Logo } from './ui'
 
 const Wrap = styled.header``
 
@@ -40,7 +40,9 @@ const Header = () => {
     <Wrap>
       <Nav>
         <Link href="/">
-          <a>alexbhdez.dev</a>
+          <a>
+            <Logo />
+          </a>
         </Link>
         <ThemeToggle onClick={handleThemeClick} darkMode={darkMode} />
         <Menu>
