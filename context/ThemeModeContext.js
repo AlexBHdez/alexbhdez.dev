@@ -4,7 +4,7 @@ import { node } from 'prop-types'
 const ThemeModeContext = createContext()
 
 const ThemeModeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(false)
 
   return (
     <ThemeModeContext.Provider value={{ darkMode, setDarkMode }}>

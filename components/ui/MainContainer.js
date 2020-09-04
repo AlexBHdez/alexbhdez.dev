@@ -8,8 +8,7 @@ const Wrap = styled.main`
 
 const InnerWrap = styled.div`
   margin: ${({ theme }) => `${theme.sizes.headerHeight} auto`};
-  max-width: 800px;
-  background-color: pink;
+  max-width: 880px;
   padding: ${({ theme }) => `0px ${theme.sizes.containerPadding}`};
 `
 
