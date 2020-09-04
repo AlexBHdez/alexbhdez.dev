@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Paragraph, Title, Button } from './ui'
 import { media } from '../styles/Theme'
 
-const Wrap = styled.div`
+const Wrap = styled.section`
   display: grid;
   grid-template-rows: auto auto;
   grid-gap: 40px;

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Header, Intro } from '../components'
+import { Header, Intro, Works } from '../components'
 import { MainContainer } from '../components/ui'
 
 const Home = () => (
@@ -16,6 +16,7 @@ const Home = () => (
     <Header />
     <MainContainer>
       <Intro />
+      <Works />
     </MainContainer>
   </>
 )
