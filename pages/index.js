@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import { Header, Intro, Works } from '../components'
 import { MainContainer } from '../components/ui'
+import { getAllWorks } from '../lib/api'
 
-const Home = () => (
+const Home = ({ workList }) => (
   <>
     <Head>
       <title>AlexBHdez.dev | Personal portfolio of a frontend developer</title>
@@ -16,9 +17,19 @@ const Home = () => (
     <Header />
     <MainContainer>
       <Intro />
-      <Works />
+      <Works workList={workList} />
     </MainContainer>
   </>
 )
 
 export default Home
+
+export const getStaticProps = async () => {
+  const workList = JSON.parse(await getAllWorks())
+
+  return {
+    props: {
+      workList,
+    },
+  }
+}

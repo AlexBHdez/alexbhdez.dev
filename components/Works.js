@@ -8,10 +8,15 @@ const Wrap = styled.section`
   border-top: 1px solid tomato;
 `
 
-const Works = () => (
-  <Wrap>
-    <Title headingTag="h2">Recent Works</Title>
-  </Wrap>
-)
+const Works = ({ workList }) => {
+  console.log('WORKLIST AT WORKS COMP: ', workList)
+
+  return (
+    <Wrap>
+      <Title headingTag="h2">Recent Works</Title>
+      {workList && workList.map(({ document }, i) => <div key={i}>{document.data.title}</div>)}
+    </Wrap>
+  )
+}
 
 export default Works
