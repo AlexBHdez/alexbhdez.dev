@@ -1,8 +1,9 @@
 ---
 title: "Dragón Vegano"
+subtitle: "Run and jump game"
 date: 2018-01-15
 client: "Ironhack First Project"
-services: "Run and Jump game"
+services: "Frontend development, Scenary Design"
 tech: "Canvas, Javascript, HTML5, CSS3, Adobe Photoshop/Illustrator"
 website: "https://alexbhdez.github.io/dragon-vegano/"
 featuredImg: "/dragon-vegano/preview.png"
