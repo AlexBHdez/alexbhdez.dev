@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Title } from './ui'
+import { WorkCard } from './'
 
 const Wrap = styled.section`
   margin-top: 50px;
@@ -8,15 +9,15 @@ const Wrap = styled.section`
   border-top: 1px solid tomato;
 `
 
-const Works = ({ workList }) => {
-  console.log('WORKLIST AT WORKS COMP: ', workList)
+const WorkList = ({ works }) => {
+  console.log('WORKLIST AT WORKS COMP: ', works)
 
   return (
     <Wrap>
       <Title headingTag="h2">Recent Works</Title>
-      {workList && workList.map(({ document }, i) => <div key={i}>{document.data.title}</div>)}
+      {works && works.map((work, i) => <WorkCard key={i} {...work} />)}
     </Wrap>
   )
 }
 
-export default Works
+export default WorkList

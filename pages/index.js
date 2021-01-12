@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import { Header, Intro, Works } from '../components'
+import { Header, Intro, WorkList } from '../components'
 import { MainContainer } from '../components/ui'
 import { getAllWorks } from '../lib/api'
 
-const Home = ({ workList }) => (
+const Home = ({ works }) => (
   <>
     <Head>
       <title>AlexBHdez.dev | Personal portfolio of a frontend developer</title>
@@ -17,7 +17,7 @@ const Home = ({ workList }) => (
     <Header />
     <MainContainer>
       <Intro />
-      <Works workList={workList} />
+      <WorkList works={works} />
     </MainContainer>
   </>
 )
@@ -25,11 +25,11 @@ const Home = ({ workList }) => (
 export default Home
 
 export const getStaticProps = async () => {
-  const workList = JSON.parse(await getAllWorks())
+  const works = JSON.parse(await getAllWorks())
 
   return {
     props: {
-      workList,
+      works,
     },
   }
 }
