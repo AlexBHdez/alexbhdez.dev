@@ -7,7 +7,7 @@ const Wrap = styled.div`
   height: 440px;
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.10);
   cursor: pointer;
-  margin: auto;
+  margin: 0 auto 20px;
   background-color: tomato;
   display: grid;
   grid-template-columns: 1fr 1fr;
