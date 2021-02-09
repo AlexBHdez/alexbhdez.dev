@@ -5,7 +5,7 @@ import { Title } from './ui'
 const Wrap = styled.div`
   border-radius: 3px;
   height: 440px;
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin: 0 auto 20px;
   background-color: tomato;
@@ -27,7 +27,7 @@ const Info = styled.div`
 `
 
 const Year = styled.p`
-  font-size: ${ ({ theme }) => theme.fontSize.regular };
+  font-size: ${({ theme }) => theme.fontSize.regular};
 `
 
 const Services = styled.ul`
@@ -35,7 +35,7 @@ const Services = styled.ul`
 `
 
 const Service = styled.li`
-  font-size: ${ ({ theme }) => theme.fontSize.regular };
+  font-size: ${({ theme }) => theme.fontSize.regular};
 `
 
 const Techs = styled.ul`
@@ -56,8 +56,12 @@ const ImageWrap = styled.div`
   }
 `
 
-const WorkCard = props => {
-  const { document: { data: { title, date, featuredImg, services, tech } } } = props
+const WorkCard = (props) => {
+  const {
+    document: {
+      data: { title, date, featuredImg, services, tech }
+    }
+  } = props
   const servicesArray = services.split(', ')
   const techsArray = tech.split(', ')
 
@@ -65,16 +69,14 @@ const WorkCard = props => {
     <Wrap>
       <Info>
         <Year>{new Date(date).getFullYear()}</Year>
-        <Title headingTag='h3' children={title} />
+        <Title headingTag="h3">{title}</Title>
         <Services>
-          { !!servicesArray.length && servicesArray.map((service, i) => (
-            <Service key={i}>{service}</Service>
-          )) }
+          {!!servicesArray.length &&
+            servicesArray.map((service, i) => <Service key={i}>{service}</Service>)}
         </Services>
         <Techs>
-          { !!techsArray.length && techsArray.map((tech, i) => (
-            <Tech key={i}>{tech}</Tech>
-          )) }
+          {!!techsArray.length &&
+            techsArray.map((techElement, i) => <Tech key={i}>{techElement}</Tech>)}
         </Techs>
       </Info>
       <ImageWrap>

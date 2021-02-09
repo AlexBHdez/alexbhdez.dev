@@ -13,5 +13,5 @@ const Paragraph = ({ children }) => <Wrap>{children}</Wrap>
 export default Paragraph
 
 Paragraph.propTypes = {
-  children: node.isRequired,
+  children: node.isRequired
 }

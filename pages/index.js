@@ -29,7 +29,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      works,
-    },
+      works
+    }
   }
 }

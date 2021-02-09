@@ -16,5 +16,5 @@ const ThemeModeProvider = ({ children }) => {
 export { ThemeModeContext, ThemeModeProvider }
 
 ThemeModeProvider.propTypes = {
-  children: node.isRequired,
+  children: node.isRequired
 }

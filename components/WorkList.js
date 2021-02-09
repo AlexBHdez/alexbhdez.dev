@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Title } from './ui'
-import { WorkCard } from './'
 import { arrayOf, object } from 'prop-types'
+import { Title } from './ui'
+import { WorkCard } from '.'
 
 const Wrap = styled.section`
   margin-top: 50px;
@@ -20,5 +20,5 @@ const WorkList = ({ works }) => (
 export default WorkList
 
 WorkList.propTypes = {
-  works: arrayOf(object).isRequired,
+  works: arrayOf(object).isRequired
 }

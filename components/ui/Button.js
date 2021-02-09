@@ -22,7 +22,7 @@ const Wrap = styled.button`
   }
 `
 
-const Button = props => {
+const Button = (props) => {
   const { onClick, children } = props
 
   return <Wrap onClick={onClick}>{children}</Wrap>
@@ -32,5 +32,5 @@ export default Button
 
 Button.propTypes = {
   onClick: func.isRequired,
-  children: string.isRequired,
+  children: string.isRequired
 }

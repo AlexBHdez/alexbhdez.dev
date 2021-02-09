@@ -21,5 +21,5 @@ const MainContainer = ({ children }) => (
 export default MainContainer
 
 MainContainer.propTypes = {
-  children: node.isRequired,
+  children: node.isRequired
 }

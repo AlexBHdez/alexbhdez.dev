@@ -20,5 +20,5 @@ const CustomThemeProvider = ({ children }) => {
 export default CustomThemeProvider
 
 CustomThemeProvider.propTypes = {
-  children: node.isRequired,
+  children: node.isRequired
 }

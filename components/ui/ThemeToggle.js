@@ -30,5 +30,5 @@ export default ThemeToggle
 
 ThemeToggle.propTypes = {
   onClick: func.isRequired,
-  darkMode: bool.isRequired,
+  darkMode: bool.isRequired
 }
