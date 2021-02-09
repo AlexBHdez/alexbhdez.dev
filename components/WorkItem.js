@@ -7,7 +7,7 @@ const Wrap = styled.div`
 
 const Title = styled.h3`
   font-size: ${({ theme }) => theme.fontSize.medium};
-  font-weight: ${({ theme }) => theme.fontWeight.ssemi};
+  font-weight: ${({ theme }) => theme.fontWeight.semi};
   line-height: 1.4em;
 `
 
