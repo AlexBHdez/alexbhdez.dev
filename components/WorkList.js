@@ -6,7 +6,7 @@ import { WorkItem } from '.'
 const Wrap = styled.section`
   margin-top: 50px;
   padding-top: 50px;
-  border-top: 1px solid tomato;
+  border-top: 1px solid ${({ theme }) => theme.colors.primary};
 `
 
 const Title = styled.h2`

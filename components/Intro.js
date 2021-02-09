@@ -9,6 +9,7 @@ const Wrap = styled.section`
   grid-gap: 40px;
   padding: 30px 0px;
   transition: all 0.75s ease;
+  margin-top: 50px;
 
   ${media.greaterThan('tablet')`
     grid-template-columns: 1fr 1fr;
@@ -29,6 +30,7 @@ const Subtitle = styled.h1`
   font-weight: ${({ theme }) => theme.fontWeight.semi};
   margin: 10px 0 20px;
   line-height: 1.1em;
+  padding-right: ${({ paddingRight }) => (paddingRight ? `${paddingRight}px` : '')};
 `
 
 const Bio = styled.div``
@@ -37,7 +39,7 @@ const Intro = () => (
   <Wrap>
     <Greetings>
       <Name>Hi, I'm Alex,</Name>
-      <Subtitle>a frontEnd developer with a graphic design background.</Subtitle>
+      <Subtitle paddingRight={50}>a frontEnd developer with a graphic design background.</Subtitle>
       <Button onClick={() => alert('wolaaaaaaa')}>Say hello</Button>
     </Greetings>
     <Bio>

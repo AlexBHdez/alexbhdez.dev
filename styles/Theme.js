@@ -16,11 +16,6 @@ const fontWeight = {
   bold: 800
 }
 
-const sizes = {
-  headerHeight: '80px',
-  containerPadding: '40px'
-}
-
 const zIndex = {
   navBar: '90'
 }
@@ -39,7 +34,6 @@ const lightTheme = {
   },
   fontSize: { ...fontSize },
   fontWeight: { ...fontWeight },
-  sizes: { ...sizes },
   zIndex: { ...zIndex }
 }
 const darkTheme = {
@@ -56,7 +50,6 @@ const darkTheme = {
   },
   fontSize: { ...fontSize },
   fontWeight: { ...fontWeight },
-  sizes: { ...sizes },
   zIndex: { ...zIndex }
 }
 

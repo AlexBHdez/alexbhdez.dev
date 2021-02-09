@@ -11,9 +11,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  height: ${({ theme }) => theme.sizes.headerHeight};
-  padding: ${({ theme }) => `0px ${theme.sizes.containerPadding}`};
+  height: 80px;
   top: 0;
   left: 0;
   right: 0;

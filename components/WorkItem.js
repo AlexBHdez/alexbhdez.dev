@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Wrap = styled.div`
+const Wrap = styled.article`
   margin-bottom: 30px;
 `
 
@@ -11,7 +11,9 @@ const Title = styled.h3`
   line-height: 1.4em;
 `
 
-const Description = styled.p``
+const Description = styled.p`
+  font-weight: ${({ theme }) => theme.fontWeight.light};
+`
 
 const WorkItem = (props) => {
   const {

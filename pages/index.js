@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Header, Intro, WorkList } from '../components'
-import { MainContainer } from '../components/ui'
+import { Container, MainContainer } from '../components/ui'
 import { getAllWorks } from '../lib/api'
 
 const Home = ({ works }) => (
@@ -14,11 +14,13 @@ const Home = ({ works }) => (
       />
     </Head>
 
-    <Header />
-    <MainContainer>
-      <Intro />
-      <WorkList works={works} />
-    </MainContainer>
+    <Container>
+      <Header />
+      <MainContainer>
+        <Intro />
+        <WorkList works={works} />
+      </MainContainer>
+    </Container>
   </>
 )
 
