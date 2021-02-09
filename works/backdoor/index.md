@@ -1,6 +1,6 @@
 ---
 title: "BackDoor Tv"
-subtitle: "A disruptive tv channel"
+description: "A disruptive tv channel as part of the Graphic Design and Visual Art Master Degree final project."
 date: 2018-01-15
 client: "Graphic Design and Visual Art Master Degree Final Project"
 services: "Graphic Design and Visual Art"

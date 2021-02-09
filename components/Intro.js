@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Paragraph, Title, Button } from './ui'
+import { Paragraph, Button } from './ui'
 import { media } from '../styles/Theme'
 
 const Wrap = styled.section`
@@ -18,14 +18,27 @@ const Wrap = styled.section`
 
 const Greetings = styled.div``
 
+const Name = styled.h2`
+  font-size: ${({ theme }) => theme.fontSize.super};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  color: ${({ theme }) => theme.colors.name};
+`
+
+const Subtitle = styled.h1`
+  font-size: ${({ theme }) => theme.fontSize.plus};
+  font-weight: ${({ theme }) => theme.fontWeight.semi};
+  margin: 10px 0 20px;
+  line-height: 1.1em;
+`
+
 const Bio = styled.div``
 
 const Intro = () => (
   <Wrap>
     <Greetings>
-      <Title headingTag="h1">Hi, I'm Alex,</Title>
-      <Title headingTag="h2">a frontEnd developer with design experience.</Title>
-      <Button onClick={() => console.log('wolaaaaaaa')}>Say hello</Button>
+      <Name>Hi, I'm Alex,</Name>
+      <Subtitle>a frontEnd developer with a graphic design background.</Subtitle>
+      <Button onClick={() => alert('wolaaaaaaa')}>Say hello</Button>
     </Greetings>
     <Bio>
       <Paragraph>

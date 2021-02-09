@@ -1,6 +1,6 @@
 ---
 title: "Angular Timer"
-subtitle: "A minimalist timer"
+description: "A minimalist timer developed with angular playing with services and components sharing info."
 date: 2018-01-15
 client: "Personal project"
 services: "Frontend development"

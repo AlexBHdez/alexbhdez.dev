@@ -1,6 +1,6 @@
 ---
 title: "3D Experiments"
-subtitle: "Some 3D projects"
+description: "Some 3D projects working with Cinema 4D and Blender."
 date: 2018-01-15
 client: "Personal project"
 services: "Visual 3D design"

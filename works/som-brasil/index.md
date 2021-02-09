@@ -1,6 +1,6 @@
 ---
 title: "Som Brasil"
-subtitle: "Brasilian community"
+description: "Brand design for a Brasilian community in Barcelona."
 date: 2018-01-15
 client: "Som Brasil Community Organization"
 services: "Branding and Graphic Design"

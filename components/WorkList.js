@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { arrayOf, object } from 'prop-types'
-import { Title } from './ui'
-import { WorkCard } from '.'
+import { WorkItem } from '.'
 
 const Wrap = styled.section`
   margin-top: 50px;
@@ -10,17 +9,18 @@ const Wrap = styled.section`
   border-top: 1px solid tomato;
 `
 
-const WorksGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 310px);
-  grid-gap: 20px;
+const Title = styled.h2`
+  font-size: ${({ theme }) => theme.fontSize.medium};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  margin-bottom: 30px;
 `
+
+const WorksWrap = styled.div``
 
 const WorkList = ({ works }) => (
   <Wrap>
-    <Title headingTag="h2">Recent Works</Title>
-    <WorksGrid>{works && works.map((work, i) => <WorkCard key={i} {...work} />)}</WorksGrid>
+    <Title>Recent Works</Title>
+    <WorksWrap>{works && works.map((work, i) => <WorkItem key={i} {...work} />)}</WorksWrap>
   </Wrap>
 )
 

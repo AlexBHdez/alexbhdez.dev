@@ -1,6 +1,6 @@
 ---
 title: "Dragón Vegano"
-subtitle: "Run and jump game"
+description: "Run and jump game made with HTML5, Javascript and Canvas as part of the Ironhack Web Dev PartTime course."
 date: 2018-01-15
 client: "Ironhack First Project"
 services: "Frontend development, Scenary Design"
