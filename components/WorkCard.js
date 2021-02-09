@@ -1,60 +1,41 @@
 import React from 'react'
 import styled from 'styled-components'
+import hexToRgba from 'hex-rgba'
 import { Title } from './ui'
 
 const Wrap = styled.div`
-  border-radius: 3px;
-  height: 440px;
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  margin: 0 auto 20px;
-  background-color: tomato;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  transition: transform 0.24s cubic-bezier(0.18, 0.89, 0.4, 1.03), box-shadow 0.2s ease-in;
-
+  background-image: ${({ bgImage }) => `url(${bgImage})`};
+  background-position: center;
+  border-radius: 4px;
+  transition: all 0.35s ease;
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  }
+`
+const Overflow = styled.div`
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.35s ease-out;
+  transition: color 0.75s ease;
+  background-color: transparent;
+  color: transparent;
+  &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }) => hexToRgba(theme.colors.primary, 50)};
+    color: white;
+    > * {
+      opacity: 1;
+    }
   }
 `
 
-const Info = styled.div`
-  color: #fff;
-  padding: 60px 0 60px 60px;
-  display: flex;
-  flex-direction: column;
+const Content = styled.div`
+  opacity: 0;
+  transition: all 0.15s ease;
+  padding: 15px;
 `
 
-const Year = styled.p`
-  font-size: ${({ theme }) => theme.fontSize.regular};
-`
-
-const Services = styled.ul`
-  margin-top: 50px;
-`
-
-const Service = styled.li`
-  font-size: ${({ theme }) => theme.fontSize.regular};
-`
-
-const Techs = styled.ul`
-  margin-top: auto;
-  display: flex;
-`
-
-const Tech = styled.li``
-
-const ImageWrap = styled.div`
-  overflow: hidden;
-
-  > img {
-    height: 100%;
-    width: auto;
-    border-radius: 3px;
-    box-shadow: 0px 3.32378px 20.6857px rgba(0, 0, 0, 0.2);
-  }
-`
+const Year = styled.p``
 
 const WorkCard = (props) => {
   const {
@@ -66,22 +47,13 @@ const WorkCard = (props) => {
   const techsArray = tech.split(', ')
 
   return (
-    <Wrap>
-      <Info>
-        <Year>{new Date(date).getFullYear()}</Year>
-        <Title headingTag="h3">{title}</Title>
-        <Services>
-          {!!servicesArray.length &&
-            servicesArray.map((service, i) => <Service key={i}>{service}</Service>)}
-        </Services>
-        <Techs>
-          {!!techsArray.length &&
-            techsArray.map((techElement, i) => <Tech key={i}>{techElement}</Tech>)}
-        </Techs>
-      </Info>
-      <ImageWrap>
-        <img src={featuredImg} alt={title} />
-      </ImageWrap>
+    <Wrap bgImage={featuredImg}>
+      <Overflow>
+        <Content>
+          <Year>{new Date(date).getFullYear()}</Year>
+          <Title headingTag="h3">{title}</Title>
+        </Content>
+      </Overflow>
     </Wrap>
   )
 }
