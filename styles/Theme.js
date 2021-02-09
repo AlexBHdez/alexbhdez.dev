@@ -34,7 +34,8 @@ const lightTheme = {
     toggleBorder: '#FFF',
     background: '#363537',
     toggleBg: '#7B7E7C',
-    toggleCircle: '#FFF'
+    toggleCircle: '#FFF',
+    primary: '#800080'
   },
   fontSize: { ...fontSize },
   fontWeight: { ...fontWeight },
@@ -50,7 +51,8 @@ const darkTheme = {
     toggleBorder: '#6B8096',
     background: '#999',
     toggleBg: '#FFF',
-    toggleCircle: '#7B7E7C'
+    toggleCircle: '#7B7E7C',
+    primary: '#800080'
   },
   fontSize: { ...fontSize },
   fontWeight: { ...fontWeight },

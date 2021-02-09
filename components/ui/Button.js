@@ -9,16 +9,16 @@ const Wrap = styled.button`
   font-size: ${({ theme }) => theme.fontSize.medium};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   background-color: transparent;
-  border: 1px solid purple;
+  border: 1px solid ${({ theme }) => theme.colors.primary};
   padding: 0 25px;
   border-radius: 4px;
-  color: purple;
+  color: ${({ theme }) => theme.colors.primary};
   transition: all 0.35s ease;
   cursor: pointer;
 
   &:hover {
     color: #fff;
-    background-color: purple;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 `
 

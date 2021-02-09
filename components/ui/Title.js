@@ -21,7 +21,7 @@ const titleStyle = ({ theme, as }) => {
     case 'h3':
       return `
         font-weight: ${theme.fontWeight.semi};
-        font-size: ${theme.fontSize.big};
+        font-size: ${theme.fontSize.medium};
         line-height: 1.4em;
       `
     default:
