@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "extends": ["wesbos"],
+  "rules": {
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/no-cycle": 0,
+    "semi": ["error", "never"],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "printWidth": 100,
+        "semi": false
+      }
+    ]
+  }
+}
