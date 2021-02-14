@@ -6,7 +6,6 @@ client: "Ironhack First Project"
 services: "Frontend development, Scenary Design"
 tech: "Canvas, Javascript, HTML5, CSS3, Adobe Photoshop/Illustrator"
 website: "https://alexbhdez.github.io/dragon-vegano/"
-featuredImg: "/dragon-vegano/preview.png"
 ---
 
 This is a chat service for hoteliers to communicate with their guests instantly & seamlessly. AutoInvite Chat is designed with both guests’ and hotel agents’ ease of use in mind: Guests can just send a text message, and hoteliers will be able to manage and reply to all requests and questions from a single screen, in real-time.
