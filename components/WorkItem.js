@@ -3,6 +3,10 @@ import styled from 'styled-components'
 
 const Wrap = styled.article`
   margin-bottom: 30px;
+  transition: color 0.35s ease;
+  &:hover {
+    color: ${({ theme }) => theme.colors.textHover};
+  }
 `
 
 const Title = styled.h3`
@@ -18,14 +22,16 @@ const Description = styled.p`
 const WorkItem = (props) => {
   const {
     document: {
-      data: { title, description }
+      data: { title, description, website }
     }
   } = props
 
   return (
     <Wrap>
-      <Title>{title}</Title>
-      <Description>{description}</Description>
+      <a href={website} target='_blank'>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+      </a>
     </Wrap>
   )
 }

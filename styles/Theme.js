@@ -22,15 +22,15 @@ const zIndex = {
 
 const lightTheme = {
   colors: {
-    body: '#FFF',
-    text: '#7B7E7C',
+    accent: '#997b1e',
+    body: '#edf2f7',
+    text: '#676a68',
     textHover: '#363537',
-    name: '#242421',
-    toggleBorder: '#FFF',
+    title: '#242421',
+    toggleBorder: '#fff',
     background: '#363537',
-    toggleBg: '#7B7E7C',
-    toggleCircle: '#FFF',
-    primary: '#800080'
+    toggleBg: '#676a68',
+    toggleCircle: '#fff'
   },
   fontSize: { ...fontSize },
   fontWeight: { ...fontWeight },
@@ -38,15 +38,15 @@ const lightTheme = {
 }
 const darkTheme = {
   colors: {
-    body: '#363537',
-    text: '#7B7E7C',
-    textHover: '#FFF',
-    name: '#242421',
-    toggleBorder: '#6B8096',
+    accent: '#fdcb6e',
+    body: '#171923',
+    text: '#99a69b',
+    textHover: '#fff',
+    title: '#cdcdcd',
+    toggleBorder: '#6b8096',
     background: '#999',
-    toggleBg: '#FFF',
-    toggleCircle: '#7B7E7C',
-    primary: '#800080'
+    toggleBg: '#fff',
+    toggleCircle: '#99a69b'
   },
   fontSize: { ...fontSize },
   fontWeight: { ...fontWeight },
