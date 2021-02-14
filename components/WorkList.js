@@ -6,13 +6,14 @@ import { WorkItem } from '.'
 const Wrap = styled.section`
   margin-top: 50px;
   padding-top: 50px;
-  border-top: 1px solid ${({ theme }) => theme.colors.primary};
+  border-top: 1px solid ${({ theme }) => theme.colors.accent};
 `
 
 const Title = styled.h2`
   font-size: ${({ theme }) => theme.fontSize.medium};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   margin-bottom: 30px;
+  color: ${({ theme }) => theme.colors.title};
 `
 
 const WorksWrap = styled.div``

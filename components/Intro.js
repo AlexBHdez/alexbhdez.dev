@@ -22,7 +22,7 @@ const Greetings = styled.div``
 const Name = styled.h2`
   font-size: ${({ theme }) => theme.fontSize.super};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
-  color: ${({ theme }) => theme.colors.name};
+  color: ${({ theme }) => theme.colors.title};
 `
 
 const Subtitle = styled.h1`
