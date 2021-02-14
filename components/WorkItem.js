@@ -28,7 +28,7 @@ const WorkItem = (props) => {
 
   return (
     <Wrap>
-      <a href={website} target='_blank'>
+      <a href={website} target="_blank" rel="noreferrer">
         <Title>{title}</Title>
         <Description>{description}</Description>
       </a>
