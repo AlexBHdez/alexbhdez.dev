@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { ExternalLink } from './ui'
 
 const Wrap = styled.article`
   margin-bottom: 30px;
@@ -28,10 +29,10 @@ const WorkItem = (props) => {
 
   return (
     <Wrap>
-      <a href={website} target="_blank" rel="noreferrer">
+      <ExternalLink href={website} target="_blank">
         <Title>{title}</Title>
         <Description>{description}</Description>
-      </a>
+      </ExternalLink>
     </Wrap>
   )
 }

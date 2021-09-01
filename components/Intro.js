@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Paragraph, Button } from './ui'
+import { Paragraph, Button, ExternalLink } from './ui'
 import { media } from '../styles/Theme'
 
 const Wrap = styled.section`
@@ -52,7 +52,11 @@ const Intro = () => (
         couple of years before I became a frontEnd developer.
       </Paragraph>
       <Paragraph>
-        Currently working as frontEnd developer at Quipu, a sass startup from Barcelona.
+        Currently working as Software Engineer at{' '}
+        <ExternalLink href="https://www.gamestry.com" target="_blank">
+          Gamestry
+        </ExternalLink>
+        , a video platform startup from Barcelona.
       </Paragraph>
     </Bio>
   </Wrap>

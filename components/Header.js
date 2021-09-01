@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import { ThemeModeContext } from '../context/ThemeModeContext'
-import { ThemeToggle, Logo } from './ui'
+import { ThemeToggle, Logo, ExternalLink } from './ui'
 import { media } from '../styles/Theme'
 
 const Wrap = styled.header``
@@ -63,9 +63,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a href="mailto:abhbretones@gmail.com" rel="noopener noreferrer">
-              Contact
-            </a>
+            <ExternalLink href="mailto:abhbretones@gmail.com">Contact</ExternalLink>
           </li>
         </Menu>
       </Nav>
