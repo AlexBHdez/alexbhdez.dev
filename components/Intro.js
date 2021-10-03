@@ -40,7 +40,9 @@ const Intro = () => (
     <Greetings>
       <Name>Hi, I'm Alex,</Name>
       <Subtitle paddingRight={50}>a frontEnd developer with a graphic design background.</Subtitle>
-      <Button onClick={() => alert('wolaaaaaaa')}>Say hello</Button>
+      <Button>
+        <ExternalLink href="mailto:abhbretones@gmail.com">Say hello</ExternalLink>
+      </Button>
     </Greetings>
     <Bio>
       <Paragraph>
