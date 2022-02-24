@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { func, string } from 'prop-types'
+import { func, node } from 'prop-types'
 
 const Wrap = styled.button`
   margin-top: 20px;
@@ -31,6 +31,6 @@ const Button = (props) => {
 export default Button
 
 Button.propTypes = {
-  onClick: func.isRequired,
-  children: string.isRequired
+  onClick: func,
+  children: node.isRequired
 }

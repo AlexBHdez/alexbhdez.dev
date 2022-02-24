@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import { ThemeModeContext } from '../context/ThemeModeContext'
-import { ThemeToggle, Logo, ExternalLink } from './ui'
+import { ThemeToggle, Logo } from './ui'
 import { media } from '../styles/Theme'
 
 const Wrap = styled.header``
@@ -30,19 +30,6 @@ const LogoWrapper = styled.a`
   `}
 `
 
-const Menu = styled.ul`
-  display: flex;
-
-  > li {
-    margin: 0 8px;
-    transition: color 0.35s ease;
-
-    &:hover {
-      color: ${({ theme }) => theme.colors.textHover};
-    }
-  }
-`
-
 const Header = () => {
   const { darkMode, setDarkMode } = useContext(ThemeModeContext)
   const handleThemeClick = () => setDarkMode(!darkMode)
@@ -56,16 +43,6 @@ const Header = () => {
           </LogoWrapper>
         </Link>
         <ThemeToggle onClick={handleThemeClick} darkMode={darkMode} />
-        <Menu>
-          <li>
-            <Link href="/blog">
-              <a>Blog</a>
-            </Link>
-          </li>
-          <li>
-            <ExternalLink href="mailto:abhbretones@gmail.com">Contact</ExternalLink>
-          </li>
-        </Menu>
       </Nav>
     </Wrap>
   )
